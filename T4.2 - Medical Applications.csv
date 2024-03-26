@@ -1,50 +1,46 @@
-﻿Name of aplication;Domains;Aplication's link;Where it works;TRL level
-Medscape;medical news source (drugs, diseases, clinical tools, live events, medical podcasts, lastests news, perspectives, consult, CME & education);https://www.medscape.com/public/medscapeapp;Android & iOS;TRL 9
-VisualDx;diagnostic;https://www.visualdx.com/about-visualdx/;Android & iOS;TRL 8
-PEPID;medical source;https://play.google.com/store/apps/details?id=pepid.android&hl=ro&gl=US;Windows, Android & iOS;TRL 9
-UpToDate;medical source;https://www.wolterskluwer.com/en/solutions/uptodate/uptodate/mobile;WEB, Android & iOS;TRL 9
-MDCalc;medical calculator;https://www.mdcalc.com/;WEB, Android & iOS;-
-Medical ID;medical emergencies;https://medicalid.app/;Android & iOS;around TRL 9
-DMINDER;monitoring immune system & quality of sleep;https://dminder.ontometrics.com/;Android & iOS;
-MyFitnessPal;health tracking;https://www.myfitnesspal.com/;Android & iOS;around TRL 9
-Diabetes:M;medical nutrition;https://diabetes-m.com/;Android & iOS;around TRL 9
-Apple Health;monitoring sleep, food, activity, symthoms, heart rate & respiration;https://www.apple.com/ios/health/;iOS;TRL 9
-AliveCor;diagnostic;https://www.alivecor.com/;Android & iOS;TRL 9
-Drugs.com Medication Guide;medical guide;https://www.drugs.com/apps/;Android & iOS;TRL 9
-mySymtomps Tracker;medical nutrition;https://www.mysymptoms.net/;Android & iOS;TRL 9
-Generis: DNA & Nutrition;health and fitness;https://linktr.ee/generisapp;Win &iOS,;around TRL 9
-Teladoc Health;communication with doctors;https://www.teladochealth.com/;Android & iOS;around TRL 9
-MySugr;diabetes management;https://www.mysugr.com/en/;Android & iOS;around TRL 9
-Aetna;manage health benefits;https://www.aetna.com/individuals-families/using-your-aetna-benefits/aetna-mobile.html;Android & iOS;around TRL 9
-AMJ Wellness;wellness tips, tricks, stress relief techniques, and statistics;https://www.tekrevol.com/case-studies/amj-wellness;Android & iOS;around TRL 9
-Talkspace Therapy & Counseling;online therapy;https://www.talkspace.com/;Android & iOS;
-Headspace;Meditation, Mindfulness and Sleep;https://www.headspace.com/;Android & iOS;
-Wysa;Anxiety, therapy chatbot;https://www.wysa.com/;Android & iOS;
-Mychart;Patient Portal App;https://www.mychart.org/;Android & iOS;
-Amwell;Doctor Visits;https://business.amwell.com/;Android & iOS;
-Maven;Women’s Healthcare;https://www.mavenclinic.com/;Android & iOS;
-Medisafe;Medication Reminder;https://www.medisafe.com/;Android & iOS;
-WebMD;Medical Resource App;https://www.webmd.com/;Android & iOS;
-Calcium;Medical Data - real-time updates, progress reports and care team alerts;https://www.calciumhealth.com/;Android & iOS;?
-Flo;women's healthcare;https://flo.health/;Android & iOS;
-Fooducate;managing diabetes;https://www.fooducate.com/;Android & iOS;
-HealthTap;telehealth virtual healthcare;https://www.healthtap.com/;Android & iOS;
-Clue;women's healthcare;https://helloclue.com/;Android & iOS;
-Ada Health;medical guide;https://play.google.com/store/apps/details?id=com.ada.app;Android & iOS;
-MyDataHelps;medical guide;https://play.google.com/store/apps/details?id=com.careevolution.mydatahelps;Android & iOS;
-Doctolib;medical guide;https://play.google.com/store/apps/details?id=fr.doctolib.www;Android & iOS;
-Elevate - Brain Training Games;medical game;https://play.google.com/store/apps/details?id=com.wonder;Android & iOS;
-Welltory: Heart Rate Monitor;heart monitoring;https://play.google.com/store/apps/details?id=com.welltory.client.android;Android & iOS;
-Migraine Buddy: Track Headache;medical tracker headache;https://play.google.com/store/apps/details?id=com.healint.migraineapp;Android & iOS;
-Wysa: Anxiety, therapy chatbot;medical chatbot;https://play.google.com/store/apps/details?id=bot.touchkin;Android & iOS;
-deprexis;depressive episodes, Recurrent depressive disorder;https://diga.bfarm.de/de/verzeichnis/00450;Web app;
-edupression;depressive episodes, Recurrent depressive disorder;https://diga.bfarm.de/de/verzeichnis/01815;Web app;
-Kaia COPD: Meine aktive COPD Therapie;Other specified chronic obstructive pulmonary disease, Chronic obstructive pulmonary disease, unspecified;https://diga.bfarm.de/de/verzeichnis/01329;Android & iOS;? Chronic pulmonary disease
-Mindable: Panikstörung und Agoraphobie;Agoraphobia, Panic disorder [episodic paroxysmal anxiety];https://diga.bfarm.de/de/verzeichnis/00329;Android & iOS;
-Mindable: Soziale Phobie;Social phobias;https://diga.bfarm.de/de/verzeichnis/01514;Android & iOS;
-MindDoc Auf Rezept;depressive episodes, Recurrent depressive disorder;https://diga.bfarm.de/de/verzeichnis/01683;Android & iOS;
-My7steps App;depressive episodes, Recurrent depressive disorder;https://diga.bfarm.de/de/verzeichnis/01786;Web App;
-somnio;Nonorganic insomnia, Difficulty falling asleep and staying asleep;https://diga.bfarm.de/de/verzeichnis/00508;Android & iOS & web app;
-Untire;Malignant neoplasm of the mammary gland [mamma];https://diga.bfarm.de/de/verzeichnis/01967;Android & iOS;
-velibra;Agoraphobia: With panic disorder, Social phobias, Panic disorder [episodic paroxysmal anxiety], Generalized anxiety disorder;https://diga.bfarm.de/de/verzeichnis/00316;Web app;
-vorvida;Mental and behavioral disorders caused by alcohol: Harmful use, Mental and behavioral disorders caused by alcohol: dependence syndrome;https://diga.bfarm.de/de/verzeichnis/00868;Web app;
+﻿Name of aplication;Domains;Aplication's website;Where it works;TRL level;Disease;Link AppStore;Link Google Play
+Medscape;medical news source (drugs, diseases, clinical tools, live events, medical podcasts, lastests news, perspectives, consult, CME & education);https://www.medscape.com/public/medscapeapp;Web, Android & iOS;TRL 9;Prevention;https://apps.apple.com/us/app/medscape/id321367289;https://play.google.com/store/apps/details?id=com.medscape.android
+VisualDx;diagnostic;https://www.visualdx.com/about-visualdx/;Web, Android & iOS;TRL 8;Prevention;https://apps.apple.com/us/app/visualdx/id348177521;https://play.google.com/store/apps/details?id=com.visualdx.android&hl=en_US
+PEPID;medical source;https://pepid.com/;Windows, Android & iOS;TRL 9;Prevention;https://apps.apple.com/ph/app/pepid/id955554418;https://play.google.com/store/apps/details?id=pepid.android&hl=ro&gl=US
+UpToDate;medical source;https://www.wolterskluwer.com/en/solutions/uptodate/uptodate/mobile;Web, Android & iOS;TRL 9;Prevention;https://apps.apple.com/us/app/uptodate/id334265345?ign-mpt=uo%3D4;https://play.google.com/store/apps/details?id=com.uptodate.android
+MDCalc;medical calculator;https://www.mdcalc.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/mdcalc-medical-calculator/id1001640662;https://play.google.com/store/apps/details?id=com.mdaware.mdcalc&hl=en
+Medical ID;medical emergencies;https://medicalid.app/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/au/app/myid-medical-id-profile/id641388921;https://play.google.com/store/apps/details?id=app.medicalid.free
+DMINDER;monitoring immune system & quality of sleep;https://dminder.ontometrics.com/;Web, Android & iOS;TRL 8;Prevention;https://apps.apple.com/us/app/d-minder-pro/id547102495?at=&ct=&ign-mpt=uo%3D6;https://play.google.com/store/apps/details?id=com.ontometrics.dminder
+MyFitnessPal;health tracking;https://www.myfitnesspal.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/ms/app/myfitnesspal-calorie-counter/id341232718;https://play.google.com/store/apps/details?id=com.myfitnesspal.android&hl=en_US
+Diabetes:M;medical nutrition;https://diabetes-m.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/diabetes-m/id1196733537;https://play.google.com/store/apps/details?id=com.mydiabetes
+Apple Health;monitoring sleep, food, activity, symthoms, heart rate & respiration;-;iOS;TRL 9;Cardio;https://www.apple.com/ios/health/;-
+AliveCor;diagnostic;https://www.alivecor.com/;Web, Android & iOS;TRL 9;Cardio;https://apps.apple.com/us/developer/alivecor-inc/id546535893;https://play.google.com/store/apps/details?id=com.alivecor.aliveecg&hl=en_US
+Drugs.com Medication Guide;medical guide;https://www.drugs.com/apps/;Web, Android & iOS;TRL 9;Prevention;https://apps.apple.com/us/app/drugs-com-medication-guide/id599471042;https://play.google.com/store/apps/details?id=com.drugscom.app
+mySymtomps Tracker;medical nutrition;https://www.mysymptoms.net/;Web, Android & iOS;TRL 9;Prevention;https://apps.apple.com/gb/app/mysymptoms-food-diary/id405231632;https://play.google.com/store/apps/details?id=com.sglabs.mysymptoms
+Teladoc Health;communication with doctors;https://www.teladochealth.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/teladoc-health-telehealth/id656872607?mt=8;https://play.google.com/store/apps/details?id=com.teladoc.members&hl=en_US
+MySugr;diabetes management;https://www.mysugr.com/en/;Web, Android & iOS;around TRL 9;Diabet;https://apps.apple.com/us/app/mysugr-diabetes-tracker-log/id516509211?mt=8;https://play.google.com/store/apps/details?id=com.mysugr.android.companion
+Aetna;manage health benefits;https://www.aetna.com/individuals-families/using-your-aetna-benefits/aetna-mobile.html;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/aetna-health/id1261033071;https://play.google.com/store/apps/details?id=com.aetna.aetnahealth
+AMJ Wellness;wellness tips, tricks, stress relief techniques, and statistics;https://www.tekrevol.com/case-studies/amj-wellness;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/ww-workplace-wellness/id1568732986;https://play.google.com/store/apps/details?id=com.app.workplacewellness
+Talkspace Therapy & Counseling;online therapy;https://www.talkspace.com/;Web, Android & iOS;around TRL 9;Mental Health;https://apps.apple.com/us/app/talkspace-therapy-and-support/id661829386;https://play.google.com/store/apps/details?id=com.talkspace.talkspaceapp&hl=en_US
+Headspace;Meditation, Mindfulness and Sleep;https://www.headspace.com/;Web, Android & iOS;around TRL 9;Mental Health;https://apps.apple.com/us/app/headspace-sleep-meditation/id493145008;https://play.google.com/store/apps/details?id=com.getsomeheadspace.android&hl=en_US
+Wysa;Anxiety, therapy chatbot;https://www.wysa.com/;Web, Android & iOS;TRL 9;Mental Health;https://apps.apple.com/us/app/wysa-mental-health-support/id1166585565;https://play.google.com/store/apps/details?id=bot.touchkin&hl=en_US
+Mychart;Patient Portal App;https://www.mychart.org/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/mychart/id382952264;https://play.google.com/store/apps/details?id=epic.mychart.android&hl=en
+Amwell;Doctor Visits;https://business.amwell.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/amwell-doctor-visits-24-7/id655783752;-
+Maven;Women’s Healthcare;https://www.mavenclinic.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/maven-clinic/id942543121?c=footer-badge&pid=Maven-web;https://play.google.com/store/apps/details?id=com.mavenclinic.android.member&hl=en_US
+Medisafe;Medication Reminder;https://www.medisafe.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/medisafe-medication-management/id573916946;https://play.google.com/store/apps/details?id=com.medisafe.android.client&hl=en_US
+WebMD;Medical Resource App;https://www.webmd.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/webmd-symptom-checker/id295076329;https://play.google.com/store/apps/details?id=com.webmd.android&hl=en_US
+Calcium;Medical Data - real-time updates, progress reports and care team alerts;https://www.calciumhealth.com/;Web, Android & iOS;TRL 9;Prevention;https://apps.apple.com/us/app/calcium-health-guide/id1456672044;https://play.google.com/store/apps/details?id=com.myhealthchampion.mobile&hl=en_IN
+Fooducate;managing diabetes;https://www.fooducate.com/;Web, Android & iOS;around TRL 9;Diabet;https://apps.apple.com/us/app/fooducate-nutrition-coach/id398436747?ign-mpt=uo%3D4;https://play.google.com/store/apps/details?id=com.fooducate.nutritionapp&referrer=utm_source%3Dfdct-redirect%26utm_campaign%3DFdct-Web-footer-button%26utm_medium%3Dna
+HealthTap;telehealth virtual healthcare;https://www.healthtap.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/healthtap-primary-care-doctors/id466079030?mt=8;https://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&hl=en_US&gl=US&deep_link_value=https%3A%2F%2Fwww.healthtap.com%2Fmember%3Futm_source%3Dht_page%26utm_medium%3Dwebsite%26utm_campaign%3Dguest%26utm_content%3Dhttps%3A%2F%2Fwww.healthtap.com%2F&pid=ht_page&c=guest
+Ada Health;medical guide;https://ada.com/ro/app/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/ro/app/ada-verific%C4%83-%C8%9Bi-s%C4%83n%C4%83tatea/id1099986434?l=ro;https://play.google.com/store/apps/details?id=com.ada.app
+MyDataHelps;medical guide;https://mydatahelps.org/identityserver/local/participant?signInId=adfacf27d9bda2a1982795fa262c4b73#/splash;Web, Android & iOS;TRL 9;Prevention;https://apps.apple.com/us/app/mydatahelps/id1286789190;https://play.google.com/store/apps/details?id=com.careevolution.mydatahelps
+Doctolib;medical guide;https://www.doctolib.fr/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/doctolib-trouvez-un-m%C3%A9decin/id925339063;https://play.google.com/store/apps/details?id=fr.doctolib.www
+Elevate - Brain Training Games;medical game;https://elevateapp.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/elevate-brain-training-games/id875063456;https://play.google.com/store/apps/details?id=com.wonder
+Welltory: Heart Rate Monitor;heart monitoring;https://welltory.com/;Web, Android & iOS;around TRL 9;Cardio;https://apps.apple.com/us/app/welltory-heart-rate-monitor/id1074367771;https://play.google.com/store/apps/details?id=com.welltory.client.android
+Migraine Buddy: Track Headache;medical tracker headache;https://migrainebuddy.com/;Web, Android & iOS;around TRL 9;Prevention;https://apps.apple.com/us/app/migraine-buddy-track-headache/id975074413;https://play.google.com/store/apps/details?id=com.healint.migraineapp
+deprexis;depressive episodes, Recurrent depressive disorder;https://de.deprexis.com/;Web app;TRL 8;Mental Health;-;-
+edupression;depressive episodes, Recurrent depressive disorder;https://app.edupression.com/login;Web app;TRL 8;Mental Health;-;-
+Kaia COPD: Meine aktive COPD Therapie;Other specified chronic obstructive pulmonary disease, Chronic obstructive pulmonary disease, unspecified;-;Android & iOS;TRL 8;;https://apps.apple.com/de/app/kaia-copd/id1341936904;https://play.google.com/store/apps/details?id=com.kaiahealth.copd
+Mindable: Panikstörung und Agoraphobie;Agoraphobia, Panic disorder [episodic paroxysmal anxiety];-;Android & iOS;TRL 8;Mental Health;https://apps.apple.com/de/app/mindable-panik-agoraphobie/id1465386878;https://play.google.com/store/apps/details?id=health.mindable.anxiety
+Mindable: Soziale Phobie;Social phobias;-;Android & iOS;TRL 8;Mental Health;https://apps.apple.com/de/app/mindable-soziale-phobie/id1567966561;https://play.google.com/store/apps/details?id=health.mindable.social
+MindDoc Auf Rezept;depressive episodes, Recurrent depressive disorder;-;Android & iOS;TRL 8;Mental Health;https://apps.apple.com/de/app/minddoc-auf-rezept/id1608331918;https://play.google.com/store/apps/details?id=de.minddoc.diga
+My7steps App;depressive episodes, Recurrent depressive disorder;https://diga.my7steps.org/;Web App;TRL 8;Mental Health;-;-
+somnio;Nonorganic insomnia, Difficulty falling asleep and staying asleep;https://app.somn.io/;Android & iOS & web app;TRL 8;Mental Health;https://apps.apple.com/de/app/somnio/id1523016446;https://play.google.com/store/apps/details?id=de.mementor.somnio
+Untire;Malignant neoplasm of the mammary gland [mamma];-;Android & iOS;TRL 8; Cancer;https://apps.apple.com/de/app/untire-ersch%C3%B6pfung-und-krebs/id1600227045;https://play.google.com/store/apps/details?id=com.tiredofcancer.de
+velibra;Agoraphobia: With panic disorder, Social phobias, Panic disorder [episodic paroxysmal anxiety], Generalized anxiety disorder;https://de.velibra.com/;Web app;TRL 8;Mental Health;-;-
+vorvida;Mental and behavioral disorders caused by alcohol: Harmful use, Mental and behavioral disorders caused by alcohol: dependence syndrome;https://de.vorvida.com/;Web app;TRL 8;Mental Health;-;-
