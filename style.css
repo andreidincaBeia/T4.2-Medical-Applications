@@ -1,0 +1,68 @@
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #edf0ec;
+    background-color: #edf0ec;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgb(137, 239, 150);
+    margin: 0; 
+    position: relative; 
+    padding: 10px 0; 
+    box-sizing: border-box; 
+}
+
+.app-icon {
+    max-width: 100px;
+    height: 100px;
+    margin: 0 auto 10px auto; 
+    border-radius: 20px;
+}
+
+.app-details {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+.app-name {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+
+.app-description {
+    color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+.app-button {
+    display: block;
+    background-color: #66df45;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+
+.app-button:hover {
+    background-color: #5a8864;
+}
