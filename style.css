@@ -1,4 +1,36 @@
+
+.page-title {
+    text-align: center;
+    background-color: #f0f9f2;
+    padding: 20px 10px;
+
+    margin: 0;
+    font-size: 1.2em;
+    color: #4CAF50;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+.page-description {
+    background-color: #f0f9f2;
+    padding: 20px 10px;
+
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5 em;
+    font-weight: normal;
+    text-align: left;
+    color: #000000;
+}
+
 .app-container {
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -50,8 +82,18 @@
     margin: 0;
 }
 
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px; 
+    padding: 10px 0 0 0;
+}
+
+/* App button styles */
 .app-button {
-    display: block;
+    display: inline-block; 
     background-color: #66df45;
     color: rgb(255, 255, 255);
     border: none;
@@ -60,9 +102,24 @@
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    margin: 10px;
+
 }
 
 .app-button:hover {
     background-color: #5a8864;
+}
+
+.button-container a:nth-child(0) {
+    flex-grow: 1;
+
+}
+
+.button-container a:nth-child(1) {
+    flex-grow: 0.5;
+
+}
+
+.button-container a:nth-child(2) {
+    flex-grow: 0.5;
+
 }
