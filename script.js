@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const csvUrl = 'https://raw.githubusercontent.com/LidiaTeo/T4.2-Medical-Applications/patch-1/T4.2%20-%20Medical%20Applications.csv';
+    const csvUrl = 'https://raw.githubusercontent.com/andreidincaBeia/T4.2-Medical-Applications/35189588daf570e870e14ba0bc65012b883c04f0/T4.2%20-%20Medical%20Applications.csv';
 
     fetch(csvUrl)
         .then(response => response.text())
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Papa.parse(csvText, {
                 header: true,
                 complete: function(results) {
-                    const appsData = results.data.filter(app => app['Name of aplication'] && app['Icon App Link'] && app[' Description'] && app['Link Google Play']); // Filter out invalid rows
+                    const appsData = results.data.filter(app => app['Name of aplication'] && app['Icon App Link'] && app['Description'] && app['Link Google Play'] && app['Website'] && app['Link AppStore']); // Filter out invalid rows
                     const appContainer = document.getElementById('appContainer');
 
                     appsData.forEach(app => {
@@ -29,16 +29,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         const appDescription = document.createElement('div');
                         appDescription.classList.add('app-description');
-                        appDescription.textContent = app[' Description'];
+                        appDescription.textContent = app['Description'];
                         appDetails.appendChild(appDescription);
+
+                        const buttonContainer = document.createElement('div');
+                        buttonContainer.classList.add('button-container');
 
                         const appButton = document.createElement('a');
                         appButton.classList.add('app-button');
                         appButton.textContent = 'Website';
-                        appButton.href = app['Link Google Play'];
+                        appButton.href = app['Website'];
                         appButton.target = '_blank'; // Open link in new tab
                         appDetails.appendChild(appButton);
 
+                        const appButton2 = document.createElement('a');
+                        appButton2.classList.add('app-button');
+                        appButton2.textContent = 'Google Play';
+                        appButton2.href = app['Link Google Play'];;
+                        buttonContainer.appendChild(appButton2);
+
+                        const appButton3 = document.createElement('a');
+                        appButton3.classList.add('app-button');
+                        appButton3.textContent = 'App Store';
+                        appButton3.href = app['Link AppStore'];;
+                        buttonContainer.appendChild(appButton3);
+
+
+                        appDetails.appendChild(buttonContainer);
                         appCard.appendChild(appDetails);
                         appContainer.appendChild(appCard);
                     });
@@ -46,3 +63,16 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 });
+
+function adjustContentPadding() {
+    var header = document.getElementById('page-title');
+    var content = document.getElementById('appContainer');
+    var headerHeight = header.offsetHeight;
+    content.style.paddingTop = headerHeight + 'px';
+  }
+
+  // Adjust padding on load
+  window.onload = adjustContentPadding;
+
+  // Adjust padding if the window is resized
+  window.onresize = adjustContentPadding;
