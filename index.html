@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>App Repository</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="overlay">
+        <div>
+          <h1>Mobile Health Apps Repository</h1>
+        </div>
+
+        <div>
+          <h3>
+            Welcome to the Mobile Health Apps Repository, your comprehensive
+            guide to the latest in health and wellness applications. Our
+            platform includes apps focused on non-communicable diseases like
+            cancer, heart disease, diabetes, mental health issues, and
+            prevention methods. Discover user-friendly reviews, expert ratings,
+            and detailed insights on each app's features, usability, and
+            effectiveness. Whether you're looking to track your diabetes, mental
+            health, manage stress, or stay on top of your medication schedule,
+            our repository offers a tailored selection to meet your needs.
+          </h3>
+          <h3>
+            Stay informed with updates on new releases, trending apps, and
+            technological advancements in the mobile health industry. Empower
+            yourself to make informed decisions about your health journey with
+            the Mobile Health Apps Repository—a trusted resource for finding the
+            right tools to support your lifestyle and well-being goals.
+          </h3>
+        </div>
+      </div>
+    </header>
+
+    <div class="filterContainer">
+      <div class="filter">
+        <label for="categoryFilter" class="filter-label"
+          >Filter by Disease:</label
+        >
+        <select id="categoryFilter" class="filter-select">
+          <option value="all">All</option>
+          <option value="Cancer">Cancer</option>
+          <option value="Diabetes">Diabetes</option>
+          <option value="Mental Health">Mental Health</option>
+          <option value="Heart Disease">Heart Disease</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="appContainer" class="app-container">
+      <!-- Apps will be dynamically added here -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
