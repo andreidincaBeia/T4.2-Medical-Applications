@@ -13,40 +13,71 @@
   <body>
     <header>
       <div class="overlay">
-          <div class="header-title">
-              <h1>Mobile Health Apps Repository</h1>
-          </div>
-          <div class="header-content">
-              <p>Welcome to the Mobile Health Apps Repository, your comprehensive guide to the latest in health and wellness applications. Our platform includes apps focused on non-communicable diseases like cancer, heart disease, diabetes, mental health issues, and prevention methods. Discover user-friendly reviews, expert ratings, and detailed insights on each app's features, usability, and effectiveness. Whether you're looking to track your diabetes, mental health, manage stress, or stay on top of your medication schedule, our repository offers a tailored selection to meet your needs.</p>
+        <div>
+          <h1>Mobile Health Apps Repository</h1>
+        </div>
 
-              <h3>Our Selection Criteria</h3>
-              <p>The apps featured in our repository are carefully chosen through a rigorous selection process to ensure they meet the highest standards of quality and reliability based on the following criteria:</p>
-              <ul>
-                  <li><strong>Relevance:</strong> Apps must address specific health and wellness needs, focusing on non-communicable diseases or preventative care.</li>
-                  <li><strong>Usability:</strong> User-friendly design and ease of navigation are prioritized to ensure accessibility for all users.</li>
-                  <li><strong>Effectiveness:</strong> Apps must demonstrate measurable benefits through features like tracking, reminders, or interactive tools, supported by evidence or positive user feedback.</li>
-                  <li><strong>Security and Privacy:</strong> Apps are assessed for compliance with data protection standards to safeguard personal information.</li>
-                  <li><strong>Innovative Features:</strong> We highlight apps that leverage the latest technology, such as AI, wearable integration, or gamification, to enhance user engagement and outcomes.</li>
-              </ul>
-
-              <h3>Stay Informed and Empowered</h3>
-              <p>Stay informed with updates on new releases, trending apps, and technological advancements in the mobile health industry. Empower yourself to make informed decisions about your health journey with the Mobile Health Apps Repository—a trusted resource for finding the right tools to support your lifestyle and well-being goals.</p>
-          </div>
+        <div>
+          <h3>
+            Welcome to the Mobile Health Apps Repository, your comprehensive
+            guide to the latest in health and wellness applications. Our
+            platform includes apps focused on non-communicable diseases like
+            cancer, heart disease, diabetes, mental health issues, and
+            prevention methods. Discover user-friendly reviews, expert ratings,
+            and detailed insights on each app's features, usability, and
+            effectiveness. Whether you're looking to track your diabetes, mental
+            health, manage stress, or stay on top of your medication schedule,
+            our repository offers a tailored selection to meet your needs.
+          </h3>
+          <h3>
+            Stay informed with updates on new releases, trending apps, and
+            technological advancements in the mobile health industry. Empower
+            yourself to make informed decisions about your health journey with
+            the Mobile Health Apps Repository—a trusted resource for finding the
+            right tools to support your lifestyle and well-being goals.
+          </h3>
+        </div>
       </div>
-  </header>
+    </header>
 
     <div class="filterContainer">
-      <div class="filter">
-        <label for="categoryFilter" class="filter-label"
-          >Filter by Disease:</label
-        >
-        <select id="categoryFilter" class="filter-select">
-          <option value="all">All</option>
-          <option value="Cancer">Cancer</option>
-          <option value="Diabetes">Diabetes</option>
-          <option value="Mental Health">Mental Health</option>
-          <option value="Heart Disease">Heart Disease</option>
-        </select>
+      <div class="filter-menu-wrapper">
+        <div class="filter-menu-header" id="filterMenuHeader">
+          <span class="filter-icon">🔍</span>
+          <span class="filter-text">Filters</span>
+          <span class="filter-count" id="filterCount">0 active</span>
+          <span class="filter-arrow">▼</span>
+        </div>
+        
+        <div class="filter-menu-content" id="filterMenuContent">
+          <div class="filter-sections-wrapper">
+            <div class="filter-section">
+              <h4 class="filter-section-title">Disease Category</h4>
+              <div class="filter-options" id="categoryOptions">
+                <!-- Dynamic options will be added here -->
+              </div>
+            </div>
+            
+            <div class="filter-section">
+              <h4 class="filter-section-title">TRL Level</h4>
+              <div class="filter-options" id="trlOptions">
+                <!-- Dynamic options will be added here -->
+              </div>
+            </div>
+            
+            <div class="filter-section">
+              <h4 class="filter-section-title">Platform Support</h4>
+              <div class="filter-options" id="platformOptions">
+                <!-- Dynamic options will be added here -->
+              </div>
+            </div>
+          </div>
+          
+          <div class="filter-actions">
+            <button class="clear-filters-btn" id="clearFiltersBtn">Clear All</button>
+            <button class="apply-filters-btn" id="applyFiltersBtn">Apply Filters</button>
+          </div>
+        </div>
       </div>
     </div>
 

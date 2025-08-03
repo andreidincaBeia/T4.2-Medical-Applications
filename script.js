@@ -3,6 +3,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let appsData = []; // To store the app data globally
     let categories = new Set(); // To store unique categories
+    let trlLevels = new Set(); // To store unique TRL levels
+    let platforms = new Set(); // To store unique platforms
+    
+    // Filter state
+    let activeFilters = {
+        categories: new Set(),
+        trlLevels: new Set(),
+        platforms: new Set()
+    };
 
     fetch(csvUrl)
         .then(response => response.text())
@@ -19,43 +28,160 @@ document.addEventListener('DOMContentLoaded', function () {
                             const category = app['Disease'].toLowerCase(); // Normalize to lowercase
                             categories.add(category);
                         }
+                        if (app['TRL level']) {
+                            const trlLevel = app['TRL level'].toLowerCase(); // Normalize to lowercase
+                            trlLevels.add(trlLevel);
+                        }
+                        if (app['Where it works']) {
+                            // Split platforms by common separators and clean them up
+                            const platformText = app['Where it works'].toLowerCase();
+                            const platformList = platformText.split(/[,&]+/).map(p => p.trim());
+                            platformList.forEach(platform => {
+                                if (platform && platform !== '') {
+                                    platforms.add(platform);
+                                }
+                            });
+                        }
                     });
 
-                    // Convert categories to sentence case and populate the dropdown
-                    populateCategoryFilter(Array.from(categories).map(toSentenceCase));
+                    // Populate filter options
+                    populateFilterOptions('categoryOptions', Array.from(categories).map(toSentenceCase).sort(), 'categories');
+                    populateFilterOptions('trlOptions', Array.from(trlLevels).map(toSentenceCase).sort(), 'trlLevels');
+                    populateFilterOptions('platformOptions', Array.from(platforms).map(toSentenceCase).sort(), 'platforms');
+                    
                     displayApps(appsData); // Display all apps initially
+                    initializeFilterMenu();
                 }
             });
         });
 
-    const filterDropdown = document.getElementById('categoryFilter');
-    filterDropdown.addEventListener('change', function () {
-        const selectedCategory = filterDropdown.value.toLowerCase(); // Normalize for comparison
-        if (selectedCategory === 'all') {
-            displayApps(appsData);
-        } else {
-            const filteredApps = appsData.filter(app => app['Disease'] && app['Disease'].toLowerCase() === selectedCategory);
-            displayApps(filteredApps);
-        }
-    });
+    function initializeFilterMenu() {
+        const menuHeader = document.getElementById('filterMenuHeader');
+        const menuContent = document.getElementById('filterMenuContent');
+        const clearBtn = document.getElementById('clearFiltersBtn');
+        const applyBtn = document.getElementById('applyFiltersBtn');
 
-    function populateCategoryFilter(categoryList) {
-        const filterDropdown = document.getElementById('categoryFilter');
-        filterDropdown.innerHTML = ''; // Clear existing options
-
-        // Add "All" option
-        const allOption = document.createElement('option');
-        allOption.value = 'all';
-        allOption.textContent = 'All';
-        filterDropdown.appendChild(allOption);
-
-        // Add categories dynamically
-        categoryList.forEach(category => {
-            const option = document.createElement('option');
-            option.value = category.toLowerCase(); // Normalize value for case-insensitive comparison
-            option.textContent = category; // Keep in sentence case
-            filterDropdown.appendChild(option);
+        // Toggle menu
+        menuHeader.addEventListener('click', function() {
+            menuHeader.classList.toggle('active');
+            menuContent.classList.toggle('active');
         });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!menuHeader.contains(event.target) && !menuContent.contains(event.target)) {
+                menuHeader.classList.remove('active');
+                menuContent.classList.remove('active');
+            }
+        });
+
+        // Clear all filters
+        clearBtn.addEventListener('click', function() {
+            activeFilters.categories.clear();
+            activeFilters.trlLevels.clear();
+            activeFilters.platforms.clear();
+            updateFilterDisplay();
+            applyFilters();
+        });
+
+        // Apply filters
+        applyBtn.addEventListener('click', function() {
+            applyFilters();
+            menuHeader.classList.remove('active');
+            menuContent.classList.remove('active');
+        });
+    }
+
+    function populateFilterOptions(containerId, options, filterType) {
+        const container = document.getElementById(containerId);
+        container.innerHTML = '';
+
+        options.forEach(option => {
+            const optionElement = document.createElement('div');
+            optionElement.className = 'filter-option';
+            optionElement.textContent = option;
+            optionElement.dataset.value = option.toLowerCase();
+            optionElement.dataset.type = filterType;
+
+            optionElement.addEventListener('click', function() {
+                const value = this.dataset.value;
+                const type = this.dataset.type;
+                
+                if (this.classList.contains('selected')) {
+                    // Remove from active filters
+                    activeFilters[type].delete(value);
+                    this.classList.remove('selected');
+                } else {
+                    // Add to active filters
+                    activeFilters[type].add(value);
+                    this.classList.add('selected');
+                }
+                
+                updateFilterDisplay();
+            });
+
+            container.appendChild(optionElement);
+        });
+    }
+
+    function updateFilterDisplay() {
+        const totalFilters = activeFilters.categories.size + activeFilters.trlLevels.size + activeFilters.platforms.size;
+        const filterCount = document.getElementById('filterCount');
+        
+        if (totalFilters === 0) {
+            filterCount.textContent = '0 active';
+        } else if (totalFilters === 1) {
+            filterCount.textContent = '1 filter active';
+        } else {
+            filterCount.textContent = `${totalFilters} filters active`;
+        }
+
+        // Update option states
+        document.querySelectorAll('.filter-option').forEach(option => {
+            const value = option.dataset.value;
+            const type = option.dataset.type;
+            
+            if (activeFilters[type].has(value)) {
+                option.classList.add('selected');
+            } else {
+                option.classList.remove('selected');
+            }
+        });
+    }
+
+    function applyFilters() {
+        let filteredApps = appsData;
+
+        // Filter by categories
+        if (activeFilters.categories.size > 0) {
+            filteredApps = filteredApps.filter(app => {
+                if (!app['Disease']) return false;
+                const category = app['Disease'].toLowerCase();
+                return activeFilters.categories.has(category);
+            });
+        }
+
+        // Filter by TRL levels
+        if (activeFilters.trlLevels.size > 0) {
+            filteredApps = filteredApps.filter(app => {
+                if (!app['TRL level']) return false;
+                const trlLevel = app['TRL level'].toLowerCase();
+                return activeFilters.trlLevels.has(trlLevel);
+            });
+        }
+
+        // Filter by platforms
+        if (activeFilters.platforms.size > 0) {
+            filteredApps = filteredApps.filter(app => {
+                if (!app['Where it works']) return false;
+                const platformText = app['Where it works'].toLowerCase();
+                return Array.from(activeFilters.platforms).some(platform => 
+                    platformText.includes(platform)
+                );
+            });
+        }
+
+        displayApps(filteredApps);
     }
 
     function displayApps(appList) {
